@@ -1,0 +1,27 @@
+/*
+Theme Name: Huesitos
+Theme URI: http://huesitosdf.com.mx/theme/
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+@import "compass/css3";
+@import "reset";
+@import "bits";
+@import "type";
+@import "grid";
+
+body{
+  background: $bg;
+}
+.logo{
+  width:12%;
+  margin: $spacing;
+}
+/* Estilos por Sección */
+
+@import "header";
+
+@import "nav";
+
+@import "home";

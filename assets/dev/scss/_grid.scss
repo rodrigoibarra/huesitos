@@ -1,0 +1,11 @@
+.wrap{
+  width:80%;
+  margin: 0 auto;
+  background: white;
+  @include breakpoint(med) {
+    width:90%;
+    margin:0 5%;
+    clear:both;
+  }
+
+}

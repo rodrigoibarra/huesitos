@@ -1,0 +1,29 @@
+.hero-home{
+  background: $amarillo;
+  padding:$spacing 10%;
+
+  &:before, &:after{
+    clear:both;
+  }
+}
+
+.hero-img{
+  width:50%;
+  float:left;
+}
+.hero-tag{
+  color:white;
+  font-size:45px;
+  font-weight:100;
+}
+
+.favoritos{
+  width:90%;
+  margin:0 auto;
+  text-align:center;
+}
+
+.brand{
+  width:(90% / 5);
+  padding:0 15px;
+}

@@ -1,0 +1,11 @@
+.global-nav{
+  background:$rojo;
+  padding: $spacing 10%;
+  text-align:center;
+
+  a{
+    padding: 0 $spacing;
+    color:white;
+  }
+
+}

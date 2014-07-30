@@ -1,0 +1,16 @@
+body{
+  font-size: 14px;
+  line-height:1.5;
+  color:$negro;
+}
+
+@media screen and (max-width: 25em) {
+    body {
+        font-size: 90%;
+    }
+}
+
+h2{
+  margin:0;
+  padding: $spacing;
+}

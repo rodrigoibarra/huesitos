@@ -1,0 +1,22 @@
+// Paleta de Colores
+$amarillo: rgba(255, 187, 71, 1.0);
+$rojo:     rgba(255, 100, 86, 1.0);
+$verde:    rgba(0, 194, 120, 1.0);
+$negro:    rgba(27, 34, 63, 1.0); //en realidad no es negro es morado.
+$bg:       rgba(238, 236, 225, 1.0);
+$spacing: 25px;
+
+
+// breakpoints
+
+@mixin breakpoint($point) {
+  @if $point == big {
+    @media screen and (max-width: 1600px) { @content; }
+  }
+  @else if $point == med {
+    @media screen and (max-width: 960px) { @content; }
+  }
+  @else if $point == small {
+    @media screen and (max-width: 650px)  { @content; }
+  }
+}
