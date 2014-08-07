@@ -382,14 +382,62 @@ td,
 th {
   padding: 0; }
 
+.cf:before, .cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  zoom: 1; }
+
+/* For IE 6/7 (trigger hasLayout) */
+@font-face {
+  font-family: 'bariol';
+  src: url("./assets/build/fonts/bariol_bold-webfont.eot?") format("eot"), url("./assets/build/fonts/bariol_bold-webfont.woff") format("woff"), url("./assets/build/fonts/bariol_bold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bariol';
+  src: url("./assets/build/fonts/bariol_regular-webfont.eot?") format("eot"), url("./assets/build/fonts/bariol_regular-webfont.woff") format("woff"), url("./assets/build/fonts/bariol_regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bariol';
+  src: url("./assets/build/fonts/bariol_thin-webfont.eot?") format("eot"), url("./assets/build/fonts/bariol_thin-webfont.woff") format("woff"), url("./assets/build/fonts/bariol_thin-webfont.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
 body {
-  font-size: 14px;
+  font-size: 100%;
   line-height: 1.5;
-  color: #1b223f; }
+  color: #1b223f;
+  font-family: "bariol",sans-serif;
+  font-weight: normal; }
+
+a {
+  font-family: "bariol",sans-serif;
+  font-weight: 100; }
 
 @media screen and (max-width: 25em) {
   body {
     font-size: 90%; } }
+h1, h2, h3 {
+  font-family: "bariol",sans-serif;
+  font-weight: bold; }
+
+h1 {
+  font-size: 2.747em; }
+
+h2 {
+  font-size: 0.874em; }
+
+h3 {
+  font-size: 1.229em; }
+
 h2 {
   margin: 0;
   padding: 25px; }
@@ -397,6 +445,7 @@ h2 {
 .wrap {
   width: 80%;
   margin: 0 auto;
+  padding: 25px;
   background: white; }
   @media screen and (max-width: 960px) {
     .wrap {
@@ -427,7 +476,7 @@ body {
 
 .hero-home {
   background: #ffbb47;
-  padding: 25px 10%; }
+  padding: 75px 10%; }
   .hero-home:before, .hero-home:after {
     clear: both; }
 
@@ -437,8 +486,7 @@ body {
 
 .hero-tag {
   color: white;
-  font-size: 45px;
-  font-weight: 100; }
+  font-size: 45px; }
 
 .favoritos {
   width: 90%;
@@ -448,3 +496,111 @@ body {
 .brand {
   width: 18%;
   padding: 0 15px; }
+
+.carrito {
+  margin: 25px;
+  border-bottom: 3px solid #ffbb47;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0px -1px 24px 0px;
+  text-align: left;
+  width: 100%; }
+  .carrito th {
+    max-width: 200px;
+    font-weight: bold;
+    background: #ffbb47;
+    color: white;
+    border: 3px solid #ffbb47;
+    padding: 8px;
+    margin: 0;
+    line-height: 1.5em; }
+  .carrito td {
+    padding: 15px;
+    margin: 0;
+    line-height: 1.5em;
+    border-bottom: 1px solid #ffbb47; }
+    .carrito td p {
+      margin: 0;
+      padding: 8px 0; }
+    .carrito td small {
+      font-weight: normal; }
+  .carrito tfoot td, .carrito tfoot th {
+    font-weight: bold;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .carrito .product-thumbnail {
+    min-width: 32px; }
+  .carrito img {
+    width: 32px; }
+  .carrito th, .carrito td {
+    vertical-align: middle; }
+  .carrito a.remove {
+    display: block;
+    font-size: 1.5em;
+    height: 1em;
+    width: 1em;
+    text-align: center;
+    line-height: 1;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    color: #ff6456;
+    text-decoration: none;
+    font-weight: bold; }
+  .carrito td.actions .coupon .input-text {
+    color: #00c278;
+    border: 2px solid #00c278;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 6px 6px 5px;
+    margin: 0 4px 0 0;
+    outline: 0;
+    line-height: 1em; }
+  .carrito input {
+    margin: 0;
+    vertical-align: middle;
+    line-height: 1em; }
+
+.imagen {
+  float: left; }
+  .imagen img {
+    max-width: 100%;
+    height: auto !important; }
+
+.boton {
+  clear: both;
+  background-color: #ff6456;
+  border: 0 none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 5px 10px 0;
+  padding: 0 22px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: auto; }
+
+.mensaje {
+  background: #ffbb47;
+  color: white;
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 25px; }

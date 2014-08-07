@@ -6,6 +6,51 @@ $negro:    rgba(27, 34, 63, 1.0); //en realidad no es negro es morado.
 $bg:       rgba(238, 236, 225, 1.0);
 $spacing: 25px;
 
+.cf:before, .cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+.cf { zoom:1; } /* For IE 6/7 (trigger hasLayout) */
+
+//fonts
+@font-face {
+  font-family: 'bariol';
+  src: url('./assets/build/fonts/bariol_bold-webfont.eot?') format('eot'),
+       url('./assets/build/fonts/bariol_bold-webfont.woff') format('woff'),
+       url('./assets/build/fonts/bariol_bold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bariol';
+  src: url('./assets/build/fonts/bariol_regular-webfont.eot?') format('eot'),
+       url('./assets/build/fonts/bariol_regular-webfont.woff') format('woff'),
+       url('./assets/build/fonts/bariol_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bariol';
+  src: url('./assets/build/fonts/bariol_thin-webfont.eot?') format('eot'),
+       url('./assets/build/fonts/bariol_thin-webfont.woff') format('woff'),
+       url('./assets/build/fonts/bariol_thin-webfont.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+//mixins
+@mixin bariol-bold {
+  font-family: "bariol",sans-serif;
+  font-weight:bold;
+}
+
+@mixin bariol-thin {
+  font-family: "bariol",sans-serif;
+  font-weight:100;
+}
+
+@mixin bariol-regular {
+  font-family: "bariol",sans-serif;
+  font-weight:normal;
+}
 
 // breakpoints
 

@@ -1,13 +1,31 @@
 body{
-  font-size: 14px;
+  font-size: 100%;
   line-height:1.5;
   color:$negro;
+  @include bariol-regular
+}
+
+a {
+  @include bariol-thin
 }
 
 @media screen and (max-width: 25em) {
     body {
         font-size: 90%;
     }
+}
+h1, h2, h3{
+  @include bariol-bold
+}
+
+h1 {
+  font-size: 2.747em;
+}
+h2 {
+  font-size: 0.874em;
+}
+h3 {
+  font-size:1.229em;
 }
 
 h2{

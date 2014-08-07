@@ -1,6 +1,7 @@
 .wrap{
   width:80%;
   margin: 0 auto;
+  padding: $spacing;
   background: white;
   @include breakpoint(med) {
     width:90%;
