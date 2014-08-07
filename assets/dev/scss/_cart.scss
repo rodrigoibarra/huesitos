@@ -1,49 +1,77 @@
 .carrito{
-    margin:$spacing;
-  	border-bottom: 3px solid $amarillo;
-    @include border_radius(5px);
+  	border-bottom: 1px solid $amarillo;
 		margin: 0px -1px 24px 0px;
 		text-align:left;
-		width: 100%;
+		width: 70%;
+
+  table{
+    width:90%;
+    white-space: nowrap;
+    table-layout: fixed;
+    @include border_radius(10px);
+  }
 
   th {
-			max-width: 200px;
-			font-weight:bold;
-      background: $amarillo;
-      color:white;
-      border:3px solid $amarillo;
-			padding: 8px;
-			margin: 0;
-			line-height: 1.5em;
-		}
-	td {
-			padding: 15px;
-			margin: 0;
-			line-height: 1.5em;
-      border-bottom: 1px solid $amarillo;
-			p {
-				margin: 0;
-				padding: 8px 0;
-			}
-      small {
-				font-weight: normal;
-			}
+	font-weight:bold;
+    background: $amarillo;
+    color:white;
+    border:3px solid $amarillo;
+	padding: 0 $spacing;
+	margin: 0;
+    text-align:left;
 		}
 
-    tfoot td, tfoot th {
-			font-weight:bold;
-			border-top: 1px solid rgba(0,0,0,0.1);
-		}
+    .product-remove{
+      width:5%;
+    }
 
-		.product-thumbnail {
-			min-width: 32px;
-		}
-		img {
-			width: 32px;
-		}
-		th, td {
-			vertical-align: middle;
-		}
+    .product-thumbnail{
+      width:30%;
+
+    }
+    .product-name{
+      width:30%;
+    }
+    .product-price{
+      width:5%;
+    }
+    .product-quantity{
+      width:20%;
+
+      input{
+        width:30%;
+      }
+    }
+    .product-subtotal{
+      width:5%;
+ 
+    }
+        
+    tr{
+    	background: white;
+	    border-bottom: 1px solid $amarillo;
+	     &:nth-child(odd){
+		   background: $bg;
+	    }
+    }
+
+    td{
+      padding:0 $spacing;
+      
+      &.product-subtotal{
+	       color:$verde;
+      }
+      
+      &:last-child{
+        border-right: none;
+      }
+    }
+    dt{
+	    display:inline-block;
+	    float:left;
+    }
+
+
 		a.remove {
 			display:block;
 			font-size:1.5em;
@@ -71,7 +99,16 @@
 		}
     	input {
 			margin: 0;
+      width:auto;
 			vertical-align: middle;
 			line-height: 1em;
 		}
   }
+.product-thumbnail{
+  width:40%;
+
+  img{
+    width:100%;
+    height:auto !important;
+  }
+}

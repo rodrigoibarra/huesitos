@@ -16,4 +16,12 @@ function my_jquery_enqueue() {
   function my_theme_wrapper_end() {
     echo '</section>';
   }
-  add_theme_support( 'woocommerce' );?>
+  add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
+function jk_dequeue_styles( $enqueue_styles ) {
+	unset( $enqueue_styles['woocommerce-general'] );	// Remove the gloss
+	unset( $enqueue_styles['woocommerce-layout'] );		// Remove the layout
+	unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
+	return $enqueue_styles;
+}
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+add_theme_support( 'woocommerce' );?>
