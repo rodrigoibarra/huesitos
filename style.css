@@ -497,95 +497,124 @@ body {
   width: 18%;
   padding: 0 15px; }
 
-.carrito {
-  border-bottom: 1px solid #ffbb47;
-  margin: 0px -1px 24px 0px;
-  text-align: left;
-  width: 70%; }
-  .carrito table {
-    width: 90%;
-    white-space: nowrap;
-    table-layout: fixed;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px; }
-  .carrito th {
-    font-weight: bold;
-    background: #ffbb47;
-    color: white;
-    border: 3px solid #ffbb47;
-    padding: 0 15px;
-    margin: 0;
-    text-align: left; }
-  .carrito .product-remove {
-    width: 5%; }
-  .carrito .product-thumbnail {
-    width: 30%; }
-  .carrito .product-name {
-    width: 30%; }
-  .carrito .product-price {
-    width: 5%; }
-  .carrito .product-quantity {
-    width: 20%; }
-    .carrito .product-quantity input {
-      width: 30%; }
-  .carrito .product-subtotal {
-    width: 5%; }
-  .carrito tr {
-    background: white;
-    border-bottom: 1px solid #ffbb47; }
-    .carrito tr:nth-child(odd) {
-      background: #eeece1; }
-  .carrito td {
-    padding: 0 15px; }
-    .carrito td.product-subtotal {
-      color: #00c278; }
-    .carrito td:last-child {
-      border-right: none; }
-  .carrito dt {
-    display: inline-block;
-    float: left; }
-  .carrito a.remove {
-    display: block;
-    font-size: 1.5em;
-    height: 1em;
-    width: 1em;
-    text-align: center;
-    line-height: 1;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    border-radius: 100%;
-    color: #ff6456;
-    text-decoration: none;
-    font-weight: bold; }
-  .carrito td.actions .coupon .input-text {
-    color: #00c278;
-    border: 2px solid #00c278;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    padding: 6px 6px 5px;
-    margin: 0 4px 0 0;
-    outline: 0;
-    line-height: 1em; }
-  .carrito input {
-    margin: 0;
-    width: auto;
-    vertical-align: middle;
-    line-height: 1em; }
+th {
+  background: #ffbb47;
+  color: white;
+  padding: 5px;
+  text-align: left; }
+
+.product-remove {
+  width: 5%; }
 
 .product-thumbnail {
-  width: 40%; }
-  .product-thumbnail img {
-    width: 100%;
-    height: auto !important; }
+  width: 30%; }
 
+.product-name {
+  width: 30%; }
+
+.product-price {
+  width: 5%; }
+
+.product-quantity {
+  width: 20%; }
+  .product-quantity input {
+    width: 30%; }
+
+.product-subtotal {
+  width: 5%; }
+
+tr:nth-child(odd) {
+  background: #eeece1; }
+
+a.remove {
+  display: block;
+  font-size: 1.5em;
+  height: 1em;
+  width: 1em;
+  text-align: center;
+  line-height: 1;
+  color: #ff6456;
+  font-weight: bold; }
+
+actions .coupon .input-text {
+  color: #00c278;
+  border: 2px solid #00c278;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 6px 6px 5px;
+  margin: 0 4px 0 0;
+  outline: 0;
+  line-height: 1em; }
+
+input {
+  margin: 0;
+  dth: auto;
+  vertical-align: middle;
+  line-height: 1em; }
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block; }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 10%;
+    text-align: center; }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap; }
+
+  .product-remove {
+    width: 10%; }
+
+  .product-thumbnail {
+    width: 100%; }
+
+  .product-name {
+    width: 100%; }
+
+  .product-price {
+    width: 100%; }
+
+  .product-quantity {
+    width: 100%; }
+    .product-quantity input {
+      width: 10%; }
+
+  .product-subtotal {
+    width: 100%; }
+
+  dl {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center; }
+
+  dt {
+    text-align: right;
+    width: 20%;
+    float: left; }
+
+  dd {
+    width: 20%; } }
 .imagen {
   float: left; }
   .imagen img {

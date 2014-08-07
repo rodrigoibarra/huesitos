@@ -1,114 +1,167 @@
 .carrito{
-  	border-bottom: 1px solid $amarillo;
-		margin: 0px -1px 24px 0px;
-		text-align:left;
-		width: 70%;
+	
+	}
+
 
   table{
-    width:90%;
-    white-space: nowrap;
-    table-layout: fixed;
-    @include border_radius(10px);
+
   }
 
   th {
-	font-weight:bold;
-    background: $amarillo;
-    color:white;
-    border:3px solid $amarillo;
-	padding: 0 $spacing;
-	margin: 0;
-    text-align:left;
-		}
+  	background: $amarillo;
+  	color:white;
+  	padding: 5px;
+  	text-align: left;
+	}
 
-    .product-remove{
+	.product-remove{
       width:5%;
     }
+	
+   .product-thumbnail{
+     width:30%;
+   
+   }
+   .product-name{
+     width:30%;
+   }
+   .product-price{
+     width:5%;
+   }
+   .product-quantity{
+     width:20%;
+   
+     input{
+       width:30%;
+     }
+   }
+   .product-subtotal{
+     width:5%;
+   
+   }
+       
+   tr:nth-child(odd){
+   background: $bg;
+   
 
-    .product-thumbnail{
-      width:30%;
-
-    }
-    .product-name{
-      width:30%;
-    }
-    .product-price{
-      width:5%;
-    }
-    .product-quantity{
-      width:20%;
-
-      input{
-        width:30%;
-      }
-    }
-    .product-subtotal{
-      width:5%;
- 
-    }
-        
-    tr{
-    	background: white;
-	    border-bottom: 1px solid $amarillo;
-	     &:nth-child(odd){
-		   background: $bg;
-	    }
-    }
-
-    td{
-      padding:0 $spacing;
+   }
+   
+   td{
+    
+     
+   }
+   dt{
       
-      &.product-subtotal{
-	       color:$verde;
-      }
-      
-      &:last-child{
-        border-right: none;
-      }
+   }
+   
+   
+   a.remove {
+    display:block;
+    font-size:1.5em;
+    height:1em;
+    width:1em;
+    text-align: center;
+    line-height: 1;
+    color: $rojo;
+    font-weight: bold;
+   }
+   actions {
+       .coupon {
+       	.input-text {
+     color:$verde;
+     border:2px solid $verde;
+     @include border-radius (5px);
+       		padding: 6px 6px 5px;
+       		margin: 0 4px 0 0;
+       		outline: 0;
+       		line-height: 1em;
+       	}
+       }
+   }
+   
+   input {
+       margin: 0;
+   dth:auto;
+       vertical-align: middle;
+       line-height: 1em;
+   }
+   
+   
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr {  }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+		padding-left: 10%; 
+		text-align: center;
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	.product-remove{
+      width:10%;
     }
-    dt{
-	    display:inline-block;
-	    float:left;
-    }
+	
+   .product-thumbnail{
+     width:100%;
+   
+   }
+   .product-name{
+     width:100%;
+   }
+   .product-price{
+     width:100%;
+   }
+   .product-quantity{
+     width:100%;
+   
+     input{
+       width:10%;
+     }
+   }
+   .product-subtotal{
+     width:100%;
+   
+   }
+   dl{
+   width: 50%;
+   margin: 0 auto;
+   text-align: center;
+   }
+   dt{
+   text-align: right;
+   	width: 20%;
+   	float:left;   
+   }
+   dd{
+	   width: 20%;
+   }
 
-
-		a.remove {
-			display:block;
-			font-size:1.5em;
-			height:1em;
-			width:1em;
-			text-align: center;
-			line-height: 1;
-			@include border_radius(100%);
-			color: $rojo;
-			text-decoration: none;
-			font-weight: bold;
-		}
-    td.actions {
-			.coupon {
-				.input-text {
-          color:$verde;
-          border:2px solid $verde;
-          @include border-radius (5px);
-					padding: 6px 6px 5px;
-					margin: 0 4px 0 0;
-					outline: 0;
-					line-height: 1em;
-				}
-			}
-		}
-    	input {
-			margin: 0;
-      width:auto;
-			vertical-align: middle;
-			line-height: 1em;
-		}
-  }
-.product-thumbnail{
-  width:40%;
-
-  img{
-    width:100%;
-    height:auto !important;
-  }
 }
+  
+
