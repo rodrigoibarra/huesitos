@@ -14,7 +14,7 @@ a {
         font-size: 90%;
     }
 }
-h1, h2, h3{
+h1, h2{
   @include bariol-bold
 }
 
@@ -24,8 +24,12 @@ h1 {
 h2 {
   font-size: 0.874em;
 }
+
 h3 {
-  font-size:1.229em;
+  @include bariol-thin;
+  font-size:1em;
+  margin: 0 ;
+
 }
 
 h2{

@@ -1,9 +1,69 @@
 .imagen{
-  float:left;
+  width:40%;
+  display:inline-block;
+  margin:0 $spacing;
 
   img{
     max-width:100%;
     height: auto !important;
+  }
+
+}
+.summary{
+  width:40%;
+  display:inline-block;
+  padding:$spacing;
+}
+.product_title{
+  font-size:1.83em;
+}
+
+// Products Grid
+
+
+ul{
+  width:98%;
+  margin:$spacing auto;
+  padding:0;
+  &:before, &:after { content:""; display:table; }
+  &:after { clear:both; }
+
+}
+ul{ zoom:1; } /* For IE 6/7 (trigger hasLayout) */
+
+
+@mixin gridProductos($productosPorLinea, $margen){
+  width: ((100% - (($productosPorLinea - 1) * $margen)) / $productosPorLinea);
+  &:nth-child(n){
+  margin-right:$margen;
+  margin-top:$margen;
+  }
+  &:nth-child(#{$productosPorLinea}n){
+      margin-right:0;
+    }
+}
+
+li{
+  font-size:16px;
+  text-align:center;
+  a{color:$negro;}
+  float:left;
+  @include gridProductos(5, 2%);
+
+  @media (max-width: 1200px){
+    @include gridProductos(4, 2%);
+  }
+
+  @media (max-width: 900px){
+    @include gridProductos(3, 2%);
+  }
+
+  @media (max-width: 670px){
+    @include gridProductos(2, 2%);
+  }
+  img{
+    width:100%;
+    height:auto !important;
   }
 
 }

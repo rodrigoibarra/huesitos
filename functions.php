@@ -23,5 +23,11 @@ function jk_dequeue_styles( $enqueue_styles ) {
 	unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
 	return $enqueue_styles;
 }
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 ); 
+function woo_remove_product_tabs( $tabs ) {
+     unset( $tabs['reviews'] ); 			// Remove the reviews tab
+    unset( $tabs['additional_information'] );  	// Remove the additional information tab
+    return $tabs;
+}
 add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 add_theme_support( 'woocommerce' );?>

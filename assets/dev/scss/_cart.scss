@@ -1,5 +1,5 @@
 .carrito{
-	
+
 	}
 
 
@@ -17,10 +17,10 @@
 	.product-remove{
       width:5%;
     }
-	
+
    .product-thumbnail{
      width:30%;
-   
+
    }
    .product-name{
      width:30%;
@@ -30,31 +30,31 @@
    }
    .product-quantity{
      width:20%;
-   
+
      input{
        width:30%;
      }
    }
    .product-subtotal{
      width:5%;
-   
-   }
-       
-   tr:nth-child(odd){
-   background: $bg;
-   
 
    }
-   
+
+   tr:nth-child(odd){
+   background: $bg;
+
+
+   }
+
    td{
-    
-     
+
+
    }
    dt{
-      
+
    }
-   
-   
+
+
    a.remove {
     display:block;
     font-size:1.5em;
@@ -65,7 +65,7 @@
     color: $rojo;
     font-weight: bold;
    }
-   actions {
+   .actions {
        .coupon {
        	.input-text {
      color:$verde;
@@ -78,58 +78,58 @@
        	}
        }
    }
-   
+
    input {
        margin: 0;
    dth:auto;
        vertical-align: middle;
        line-height: 1em;
    }
-   
-   
-@media 
+
+
+@media
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
 	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
+	table, thead, tbody, th, td, tr {
+		display: block;
 	}
-	
+
 	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
+	thead tr {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
-	
+
 	tr {  }
-	
-	td { 
+
+	td {
 		/* Behave  like a "row" */
 		border: none;
 		position: relative;
-		padding-left: 10%; 
+		padding-left: 10%;
 		text-align: center;
 	}
-	
-	td:before { 
+
+	td:before {
 		/* Now like a table header */
 		position: absolute;
 		/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
+		width: 45%;
+		padding-right: 10px;
 		white-space: nowrap;
 	}
 	.product-remove{
       width:10%;
     }
-	
+
    .product-thumbnail{
      width:100%;
-   
+
    }
    .product-name{
      width:100%;
@@ -139,14 +139,14 @@ only screen and (max-width: 760px),
    }
    .product-quantity{
      width:100%;
-   
+
      input{
        width:10%;
      }
    }
    .product-subtotal{
      width:100%;
-   
+
    }
    dl{
    width: 50%;
@@ -156,12 +156,10 @@ only screen and (max-width: 760px),
    dt{
    text-align: right;
    	width: 20%;
-   	float:left;   
+   	float:left;
    }
    dd{
 	   width: 20%;
    }
 
 }
-  
-

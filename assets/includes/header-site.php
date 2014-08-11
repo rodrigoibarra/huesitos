@@ -1,4 +1,4 @@
 <header class="header-home">
-  <img class="logo" src="<?php bloginfo('template_url'); ?>/assets/build/img/huesitos.png" />
+  <a href="/"><img class="logo" src="<?php bloginfo('template_url'); ?>/assets/build/img/huesitos.png" /></a>
   <?php include("nav.php"); ?>
 </header>

@@ -13,5 +13,5 @@ global $product;
 ?>
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
-	<span class="precio"><?php echo $price_html; ?></span>
+	<span class="precio">Desde <?php echo $price_html; ?></span></br>
 <?php endif; ?>
