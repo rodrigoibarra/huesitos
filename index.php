@@ -9,6 +9,7 @@
       <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/royal-canin.jpg" />
       <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/hills.png" />
     </div>
+<script src="<?php bloginfo('template_url'); ?>/assets/build/js/global.min.js"></script>
 
     <section id="recent">
       <h1>Recently Added</h1>

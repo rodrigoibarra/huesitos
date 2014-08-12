@@ -5,8 +5,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       build: {
-        src: ['dev/js/*.js', 'js/global.js'],
-        dest: 'build/js/global.min.js'
+        src: ['assets/dev/js/*.js', 'js/global.js'],
+        dest: 'assets/build/js/global.min.js'
       }
     },
       compass: {                  // Task
