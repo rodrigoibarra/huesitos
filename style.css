@@ -26,19 +26,16 @@ body {
   margin: 0; }
 
 *, *:after, *:before {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 @-o-viewport {
   width: device-width; }
-
 @-ms-viewport {
   width: device-width; }
-
 @viewport {
   width: device-width; }
-
 html {
   overflow-y: auto; }
 
@@ -398,19 +395,16 @@ th {
   src: url("./assets/build/fonts/bariol_bold-webfont.eot?") format("eot"), url("./assets/build/fonts/bariol_bold-webfont.woff") format("woff"), url("./assets/build/fonts/bariol_bold-webfont.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
-
 @font-face {
   font-family: 'bariol';
   src: url("./assets/build/fonts/bariol_regular-webfont.eot?") format("eot"), url("./assets/build/fonts/bariol_regular-webfont.woff") format("woff"), url("./assets/build/fonts/bariol_regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'bariol';
   src: url("./assets/build/fonts/bariol_thin-webfont.eot?") format("eot"), url("./assets/build/fonts/bariol_thin-webfont.woff") format("woff"), url("./assets/build/fonts/bariol_thin-webfont.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
-
 body {
   font-size: 100%;
   line-height: 1.5;
@@ -542,10 +536,8 @@ a.remove {
 .actions .coupon .input-text {
   color: #00c278;
   border: 2px solid #00c278;
-  -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 6px 6px 5px;
   margin: 0 4px 0 0;
@@ -732,9 +724,23 @@ li {
   background: #ffbb47;
   color: white;
   font-size: 18px;
-  -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 15px; }
+
+.footer {
+  background: #ff6456;
+  padding-top: 15px;
+  border-top: 5px solid #ffbb47; }
+
+ul.direccion, ul.marcas {
+  width: 25%;
+  margin: 0 0 0 10%;
+  float: left; }
+  ul.direccion li, ul.marcas li {
+    width: 100%;
+    float: none;
+    text-align: left;
+    margin: 5px 0 0 0;
+    color: white; }

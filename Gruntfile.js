@@ -48,6 +48,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   // Default task(s).
-  grunt.registerTask('default', ['uglify', 'compass']);
+  grunt.registerTask('default', ['uglify', 'compass', 'watch']);
 
 };

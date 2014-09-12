@@ -1,15 +1,6 @@
 <?php get_header(); ?>
   <?php include("assets/includes/header-home.php"); ?>
   <section class="wrap">
-    <div class="favoritos">
-      <h2>Las marcas favoritas de nuestras mascotas</h2>
-      <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/nupec.png" />
-      <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/eukanuba.jpg" />
-      <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/purina.jpg" />
-      <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/royal-canin.jpg" />
-      <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/hills.png" />
-    </div>
-
     <section id="recent">
       <h1>Recently Added</h1>
       <ul>
@@ -29,7 +20,14 @@
           <?php wp_reset_query(); ?>
       </ul>
     </section>
-
+    <div class="favoritos">
+      <h2>Las marcas favoritas de nuestras mascotas</h2>
+      <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/nupec.png" />
+      <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/eukanuba.jpg" />
+      <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/purina.jpg" />
+      <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/royal-canin.jpg" />
+      <img class="brand" src="<?php bloginfo('template_url'); ?>/assets/build/img/hills.png" />
+    </div>
   </section>
 
 
