@@ -1,25 +1,28 @@
 {
-  "name": "HuesitosDF",
-  "title": "huesitosdf.com.mx",
-  "version": "0.1.0",
-  "author": {
-    "name": "Rodrigo Ibarra",
-    "email": "hola@rodrigo-ibarra.com",
-    "url": "rodrigo-ibarra.com"
+  "name": "huesitos",
+  "version": "1.0.2",
+  "description": "Static site for Huesitos DF",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git:////github.com/rodrigoibarra/huesitos.git"
+    "url": "git+https://github.com/rodrigoibarra/huesitos.git"
   },
+  "author": "Rodrigo Ibarra",
+  "license": "ISC",
   "bugs": {
-    "url": "https:///github.com/rodrigoibarra/huesitos/issues"
+    "url": "https://github.com/rodrigoibarra/huesitos/issues"
   },
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-cli": "~0.1.11",
-    "grunt-contrib-compass": "~0.9.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-uglify": "~0.5.0",
-    "grunt-contrib-connect": "~0.8.0"
-  }
+  "homepage": "https://github.com/rodrigoibarra/huesitos#readme"
 }
