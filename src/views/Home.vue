@@ -1,11 +1,11 @@
 <template>
-  <div class="home gridContainer">
+  <div class="home ">
     <div class="hero">
       <div class="tagHero">
       <h1>Bienvenido a Huesitos DF</h1>
       <p>Vendemos alimento y accesorios para mascotas, servicio a domicilio en TODO el DF</p>
       </div>
-      <img src="../assets/img/perritu.png" alt="Huesitos DF">
+      <img class="heroPet" src="../assets/img/perritu.png" alt="Huesitos DF">
     </div>
     <div class="onBoarding flexContainer">
       <div class="itemOnBoard">
@@ -38,19 +38,19 @@
 
 <style lang="scss">
 .hero{
-    grid-column: 1 / 9;
+   // grid-column: 1 / 9;
+   display:grid;
     padding:2em 3em;
     background-color: $rojo;
-    display:flex;
+    grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: center;
 }
 .onBoarding{
-  grid-column: 1 / 9;
-  justify-content: space-between;
-  margin:5em 0;
-  padding: 2em 3em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  padding:4em 3em;
 }
 
 .itemOnBoard{
@@ -62,11 +62,15 @@
 
 .tagHero{
   font-size:1.8em;
-  width: 40%;
+ // width: 40%;
 }
 .tagHero p{
   color:white;
   font-size:1.4rem;
+}
+
+img.heroPet{
+  justify-self:center;
 }
  svg {
       text-align: center;
