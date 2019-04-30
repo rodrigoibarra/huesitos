@@ -5,3 +5,23 @@ $verde:    rgba(0, 194, 120, 1.0);
 $negro:    rgba(27, 34, 63, 1.0);
 $bg:       #FAFAFA;
 $spacing: 15px;
+
+//Quick Reset
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.gridContainer{
+    display:grid;
+    width: 100%;
+    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 8px;
+}
+
+.flexContainer{
+    display: flex;
+}
+
+
